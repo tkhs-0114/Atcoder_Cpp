@@ -1,0 +1,3 @@
+g++ main.cpp -std=c++14 -I . -o .main -Wall
+echo "--- RUN C++ ---"
+./.main < input.txt

@@ -1,0 +1,8 @@
+services:
+  gcc:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    volumes:
+      - ./code:/usr/src/myapp
+    tty: true
