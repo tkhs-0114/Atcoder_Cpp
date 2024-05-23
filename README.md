@@ -4,8 +4,7 @@ Docker上のAtcoderで使用するC++の環境
 ### 使用コマンド
 - 起動
 ```console
-docker compose up -d
-docker compose exec gcc bash
+sh dockUp
 ```
 - 実行
 input.txtの内容を入力とする
