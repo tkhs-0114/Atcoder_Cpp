@@ -4,5 +4,5 @@ services:
       context: .
       dockerfile: ./dockerfile
     volumes:
-      - ./code:/usr/src/myapp
+      - ./code:/usr/src/code
     tty: true
