@@ -1,5 +1,15 @@
-MAIN = "../code./main.cpp"
-INPUT = "../code/input.txt ."
-g++ MAIN -std=c++14 -I . -o .main -Wall
-echo "--- RUN C++ ---"
-./.main < INPUT
+#!/bin/bash
+
+MAIN=/usr/src/code/main.cpp
+INPUT=/usr/src/code/input.txt
+
+# コンパイル
+g++ $MAIN -std=c++14 -I . -o .main -Wall
+
+# コンパイルが成功したかどうかの確認
+if [ $? -eq 0 ]; then
+    echo "--- RUN C++ ---"
+    ./.main < $INPUT
+else
+    echo "コンパイルエラー"
+fi

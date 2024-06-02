@@ -1,0 +1,11 @@
+#!/bin/bash
+
+MAIN=/usr/src/code/main.cpp
+TEMP=/usr/src/myapp/template.cpp
+
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+BACKUP="/usr/src/code/log_$TIMESTAMP.cpp"
+
+cp $MAIN $BACKUP
+cp $TEMP $MAIN
+echo "記述を開始できます"
