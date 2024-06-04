@@ -1,5 +1,6 @@
 services:
   gcc:
+    container_name: "Atcoder"
     build:
       context: .
       dockerfile: ./dockerfile

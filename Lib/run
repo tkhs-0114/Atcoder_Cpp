@@ -8,7 +8,7 @@ g++ $MAIN -std=c++14 -I . -o .main -Wall
 
 # コンパイルが成功したかどうかの確認
 if [ $? -eq 0 ]; then
-    echo "--- RUN C++ ---"
+    echo "--- 実行 ---"
     ./.main < $INPUT
 else
     echo "コンパイルエラー"
