@@ -1,6 +1,7 @@
 #!/bin/bash
 
 MAIN=/usr/src/code/main.cpp
+INPUT=/usr/src/code/input.txt
 TEMP=/usr/src/myapp/template.cpp
 
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
@@ -8,4 +9,5 @@ BACKUP="/usr/src/code/log_$TIMESTAMP.cpp"
 
 cp $MAIN $BACKUP
 cp $TEMP $MAIN
+cp /dev/null $INPUT
 echo "記述を開始できます"
