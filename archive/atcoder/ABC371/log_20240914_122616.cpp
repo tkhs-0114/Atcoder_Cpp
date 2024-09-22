@@ -10,7 +10,19 @@ using namespace std;
 
 int main() {
 
-  
+  string AB, AC, BC;
+  cin >> AB >> AC >> BC;
+  int A=0, B=0, C=0;
+  if(AB == "<")B++;
+  else A++;
+  if(AC == "<")C++;
+  else A++;
+  if(BC == "<")C++;
+  else B++;
+
+  if(A == 1)COUT("A");
+  if(B == 1)COUT("B");
+  if(C == 1)COUT("C");
 
   return 0;
 }

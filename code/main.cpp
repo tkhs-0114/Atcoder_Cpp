@@ -6,7 +6,7 @@ using namespace std;
 #define REP(i, n) for(int i = 0; i < (n); i++)
 #define AIN(A) for(auto& a:(A))cin >> a;
 #define MAKE(a) int a;cin >> a; 
-#define INF = 2147483647;
+#define INF 2147483647
 
 int main() {
 

@@ -10,7 +10,20 @@ using namespace std;
 
 int main() {
 
-  
+  MAKE(N);MAKE(M);
+  int Al[N];
+  for(int i=0; i<N; i++)Al[i]=0;
+  for(int i=0; i<M; i++){
+    MAKE(A);
+    string B;cin >> B;
+    if(B == "M"){
+      if(Al[A-1] == 0){COUT("Yes");}
+      else{COUT("No");}
+      Al[A-1]++;
+    }else{
+      COUT("No");
+    }
+  }
 
   return 0;
 }

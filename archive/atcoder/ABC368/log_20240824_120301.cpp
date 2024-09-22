@@ -6,11 +6,20 @@ using namespace std;
 #define REP(i, n) for(int i = 0; i < (n); i++)
 #define AIN(A) for(auto& a:(A))cin >> a;
 #define MAKE(a) int a;cin >> a; 
-#define INF 2147483647
+#define INF = 2147483647;
 
 int main() {
 
-  
+  MAKE(N);MAKE(K);
+  int A[N];
+  AIN(A);
+  for(int i=K-1; i<N; i++){
+    cout << A[i] << " ";
+  }
+  for(int i=0; i<K-1; i++){
+    cout << A[i] << " ";
+  }
+  cout << endl;
 
   return 0;
 }

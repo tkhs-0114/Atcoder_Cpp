@@ -7,3 +7,4 @@ services:
     volumes:
       - ./code:/usr/src/code
     tty: true
+    init: true

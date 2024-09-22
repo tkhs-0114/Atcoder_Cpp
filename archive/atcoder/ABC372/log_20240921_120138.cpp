@@ -10,7 +10,14 @@ using namespace std;
 
 int main() {
 
-  
+  string S;
+  cin >> S;
+  for(auto s:S){
+    if(s != '.'){
+      cout << s;
+    }
+  }
+  cout << endl;
 
   return 0;
 }
