@@ -7,12 +7,12 @@ int main() {
   int Now;
   while(Left <= Right){
     Now = (Left+Right)/2;
-    Calc = A[Now]
+    int Calc = A[Now];
     if(target < Calc)Right = Now-1;
     if(target > Calc)Left = Now+1;
     if(target == Calc)break;
   }//Nowはtargetの
-  cout << Now << endl;
+  cout << A[Now] << endl;
 
   return 0;
 }
