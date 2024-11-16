@@ -10,7 +10,18 @@ using namespace std;
 
 int main() {
 
-  
+  string S;
+  cin >> S;
+  int cnt = 0;
+  for(auto s:S){
+    if(s == '|'){
+      if(cnt != 0)cout << cnt << " ";
+      cnt = 0;
+    }else{
+      cnt++;
+    }
+  }
+  cout << endl;
 
   return 0;
 }
